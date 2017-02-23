@@ -1,0 +1,21 @@
+{
+"mandator": {
+ "bol.de":       { "id": "5001",  "name" : "bol.de",       "oid" : 2}
+, "bol.ch":      { "id": "22001", "name" : "bol.ch",       "oid" : 2}
+, "buch.de":     { "id": "1003",  "name" : "Buch.de",      "oid" : 3}
+, "buch.ch":     { "id": "21003", "name" : "Buch.ch",      "oid" : 3}
+, "thalia.de":   { "id": "2004",  "name" : "Thalia.de",    "oid" : 4}
+, "thalia.at":   { "id": "4004",  "name" : "Thalia.at",    "oid" : 4}
+, "thalia.ch":   { "id": "23004", "name" : "Thalia.ch",    "oid" : 4}
+, "orellfuesli": { "id": "37004", "name" : "Orell Füssli", "oid" : 5}
+}
+, "ereader": {
+	"tolino_shine":          {"name": "Tolino Shine",       "useragent": "tolino shine",  "clientId":"treaderapp01",    "clientSecret": "treaderapp_password"}
+	, "tolino_shine_2_hd" :  {"name": "Tolino Shine 2 HD",  "useragent": "tolino shine 2 hd", "clientId": "treadershine2",  "clientSecret": "nKo12Eck"}
+	, "tolino_vision" :      {"name": "Tolino Vision",      "useragent": "tolino vision", "clientId": "treaderapp01",   "clientSecret": "treaderapp_password"}
+	, "tolino_vision_2_hd" : {"name": "Tolino Vision 2 HD", "useragent": "tolino vision 2 hd", "clientId": "treaderapp01",   "clientSecret": "treaderapp_password"}
+	, "tolino_vision_3_hd" : {"name": "Tolino Vision 3 HD", "useragent": "tolino vision 3 hd", "clientId": "treadervision3", "clientSecret": "gU5a7CA9"}
+	, "tolino_vision_4_hd" : {"name": "Tolino Vision 4 HD", "useragent": "tolino vision 4 hd", "clientId": "treadervision4", "clientSecret": "KsqrtHa7"}
+	, "tolino_page" :        {"name": "Tolino Page",        "useragent": "tolino page", "clientId": "treaderpage",    "clientSecret": "4rabKP3j"}
+}
+}

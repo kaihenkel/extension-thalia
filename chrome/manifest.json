@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+
+  "name": "Thalia eReader",
+  "description": "emulate thalia eReader functionality",
+  "version": "1.0",
+
+	"content_scripts": [{
+		"matches" : [ 
+			 "http://*/testpage/*", "https://*/testpage/*"
+			, "http://*/*ThaliaShop/*", "https://*/*ThaliaShop/*"
+			, "http://*/ebooks/*", "https://*/ebooks/*"
+		], "run_at" : "document_start",
+		"js":["js/inject.js", "js/logger.js"],
+		"css":["/css/inject.css"]
+	}],
+
+  "background" :{
+  	"scripts": ["/js/jquery-2.2.1.min.js","/js/utilities.js", "js/logger.js", "/js/data.js","/js/background.js" ]
+  },
+
+  "web_accessible_resources": [
+  	"/js/screencontroler.js"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  
+  "options_ui" : {
+     "page" : "options.html",
+     "chrome_style" : true
+  },
+  "permissions": [
+    "storage"
+    , "cookies"
+    , "webRequest", "webRequestBlocking"
+    , "tabs"
+    , "http://*/testpage/*", "https://*/testpage/*"
+	, "http://*/*ThaliaShop/*", "https://*/*ThaliaShop/*"
+	, "http://*/ebooks/*", "https://*/ebooks/*"
+  ]
+}

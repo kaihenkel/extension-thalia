@@ -1,0 +1,9 @@
+{
+"mandator": {
+, "buch.de":     { "id": "1003",  "name" : "buch.de",      "oid" : 3}
+, "buch.ch":     { "id": "21003", "name" : "Buch.ch",      "oid" : 3}
+, "thalia.de":   { "id": "2004",  "name" : "Thalia.de",    "oid" : 4}
+, "thalia.at":   { "id": "4004",  "name" : "Thalia.at",    "oid" : 4}
+, "orellfuesli": { "id": "37004", "name" : "Orell Füssli", "oid" : 5}
+}
+

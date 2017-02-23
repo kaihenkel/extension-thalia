@@ -1,0 +1,73 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	font-size: 75%;
+	width: 400px;	
+}
+
+body.disabled {
+	background-color: #ccc;
+}
+
+label {
+	display: block;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+input, select {
+	margin-bottom: 10px;
+	width: 95%;
+}
+
+input[type="text"], input[type="password"] {
+	border-width: 2px;
+}
+
+.options input {
+	width: 24px;
+}
+
+div.button-row {
+	margin: 0 10px;
+}
+
+.half {
+	width: 185px;
+	padding: 5px;
+}
+
+.button-row input {
+	width: 30%;
+}
+
+.left {
+	float: left;
+	margin-left: 5px;
+}
+
+.right {
+	float: right;
+	margin-left: 5px;
+}
+
+.clear {
+	clear: both;
+}
+
+.message {
+	margin: 10px;
+}
+
+.modified {
+	background-color: #DDD;
+}
+
+#message {
+	/* avoid an excessively wide status text */
+	white-space: pre;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 400px;
+}

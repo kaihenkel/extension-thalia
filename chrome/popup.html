@@ -1,0 +1,77 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+<title>Thalia Extension</title>
+<link type="text/css" rel="stylesheet" href="css/styles.css" />
+
+<!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/logger.js"></script>
+<script type="text/javascript" src="js/messagehistory.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+</head>
+<body>
+	<div class="options">
+		<input type="image" src="/res/options_24.png" id="options" class="right" >
+		<div class="clear"></div>
+	</div>
+	<div class="data" id="config">
+		<div class="half left">
+			<label for="eReader">eReader:</label>
+			<select id="eReader">
+				<option value="">None</option>
+			</select>
+		</div>
+		<div class="half right">
+			<label for="mandator">Mandator:</label>
+			<select id="mandator">
+				<option value="">None</option>
+			</select>
+		</div>
+
+		<div class="button-row">
+			<input type="button" class="right" id="apply"  value="apply">
+			<div class="clear"></div>
+		</div>
+	</div>
+		<div class="data" id="customer">
+			<div class="half left">
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username">
+			</div>
+			<div class="half right">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password">
+			</div>
+
+			<div id="status" class="message" ></div>
+			
+			<div class="button-row">
+				<input type="button" id="login"   class="right" value="login">
+				<input type="button" id="logout"  class="right" value="logout">
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="info" class="message" ></div>		
+		<div class="button-row">
+			<input type="button" id="enable" class="right" value="enable">
+			<input type="button" id="test"   class="right" value="test">
+			<div class="clear"></div>
+		</div>
+
+		<div id="message" class="message"></div>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+div.messages {
+	border: 1px solid gray;
+	margin: 10px 0;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}

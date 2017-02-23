@@ -1,0 +1,43 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+<title>Thalia Extension</title>
+<link type="text/css" rel="stylesheet" href="css/options.css" />
+
+<!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+
+</head>
+<body>
+	<div class="mandators">
+		<h2>Mandators</h2>
+	</div>
+	<div class="ereaders">
+		<h2>eReaders</h2>
+	</div>
+	<div>
+	<input id="apply" type="button" value="apply" class="right">
+	<div class="options-load">
+		<input id="options-file" type="file"  value="load"  class="right">
+	</div>
+	<div class="clear">&nbsp;</div>
+	</div>
+	<div id="messages" class="messages">
+		<ul></ul>
+	</div>
+	<script type="text/javascript">console.log('foo');</script>
+	<script type="text/javascript" src="/js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="/js/utilities.js"></script>
+	<script type="text/javascript" src="/js/logger.js"></script>
+	<script type="text/javascript" src="/js/data.js"></script>
+	<script type="text/javascript" src="/js/options.js"></script>
+</body>
